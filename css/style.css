@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+.container {
+
+}
+
+.rubrik-text{
+    font-family: Times, serif
+
+
+}
+.header {
+    background-color: brown;
+
+}
+
+.section {
+    
+}
+
+.nav {
+width: 100%;
+height: auto;
+background-color: brown;
+}
+
+.nav.active {
+    left: 0;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.overlay.active{
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
