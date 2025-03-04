@@ -33,20 +33,31 @@ body {
 }
 
 
+/* Skrift */
 
+p {
+  margin: 1rem;
+}
 
 a {
     text-decoration: none;
     color: orange;
 }
 
+section {
+    padding: 2rem  0;
+}
 
+.second-background {
+    background-color: yellow;
+}
 
 
 
 /* Header och Nav */ 
 
-.header {
+header {
+  grid-area: header;
   background-color: brown;
   color: white;
   text-align: center;
@@ -112,15 +123,92 @@ header .container{
 
 /* main */
 
-.section {
-    
+main{
+    grid-area: main;
 }
-
 
 /* footer */
 
+footer {
+    grid-area: footer;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
 
-@media (min-width: 500px) {
+
+/* Hemsida 1 layout */
+
+body.home-page main {
+    display: grid
+    "banner"
+    "offers"
+    "hours";
+    grid-template-columns: 1fr;
+}
+
+body.home-page .banner {
+    grid-area: banner;
+}
+
+body.home-page .offers {
+    grid-area: offers;
+}
+
+body.home-page .hours-section {
+    grid-area: hours;
+}
+
+/* Banner */
+
+.banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.btn {
+
+}
+
+
+/* Kortdelen */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: yellow;
+    border-radius: 8px;
+    box-shadow: ;
+    border: 2px solid brown;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Öppetider */
+.hours {
+  background-color: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: ;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 600px) {
 
 
     body {
