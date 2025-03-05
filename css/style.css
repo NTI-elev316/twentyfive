@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     color: black;
     background-color: white;
     min-height: 100vh;
@@ -140,13 +141,13 @@ footer {
 
 
 /* Hemsida 1 layout */
-
 body.home-page main {
     display: grid
     "banner"
     "offers"
     "hours";
     grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 body.home-page .banner {
@@ -162,7 +163,6 @@ body.home-page .hours-section {
 }
 
 /* Banner */
-
 .banner {
     background-color: black;
     color: white;
@@ -171,7 +171,13 @@ body.home-page .hours-section {
 }
 
 .btn {
-
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
 }
 
 
@@ -197,6 +203,20 @@ body.home-page .hours-section {
     border-radius: 8px 8px 0 0;
 }
 
+.card h3, .card p {
+    padding: 0 1rem;
+}
+
+.card h3 {
+    margin-top: 1rem;
+}
+
+.price {
+    font-weight: bold;
+    color: brown;
+    padding-bottom: 1rem;
+}
+
 /* Öppetider */
 .hours {
   background-color: white;
@@ -205,6 +225,32 @@ body.home-page .hours-section {
   box-shadow: ;
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Hemsida 2 layout */
+body.menu-page main {
+    display: grid
+    "header"
+    "foods"
+    "drinks";
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+body.menu-page .page-header {
+    grid-area: header;
+}
+
+body.menu-page .foods {
+    grid-area: foods;
+}
+
+body.menu-page .drinks {
+    grid-area: drinks;
+}
+
+body.menu-page .page-header h1 {
+    margin: 1.5rem 0;
 }
 
 
