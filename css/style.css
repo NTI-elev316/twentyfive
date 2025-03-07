@@ -223,7 +223,7 @@ body.home-page .hours-section {
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: ;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -253,8 +253,83 @@ body.menu-page .page-header h1 {
     margin: 1.5rem 0;
 }
 
+/* Hemsida 3 layout */
+body.calender-page main {
+    display: grid
+    "header"
+    "calender"
+    "events";
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
 
-@media (min-width: 600px) {
+body.menu-page .page-header {
+    grid-area: header;
+}
+
+body.menu-page .calender-section {
+    grid-area: calender;
+}
+
+body.menu-page .events-section {
+    grid-area: events;
+}
+
+.page-header {
+    margin-top: 1rem;
+}
+
+/* calender */
+
+.month {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.calender {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightgray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.calender th, .calender td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.calender th {
+    background-color: brown;
+    color: white;
+}
+
+/* events */
+
+.event-list {
+    margin-top: 2rem;
+}
+
+.event-item {
+    display: flex;
+    background-color: yellow;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.event-date {
+    background-color: brown;
+    color: white;
+    min-width: 100px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+@media (min-width: 500px) {
 
 
     body {
