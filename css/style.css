@@ -28,13 +28,19 @@ body {
 .rubrik-text{
   font-family: Times, serif;
   font-weight: bold;
-  
-
-
 }
 
 
 /* Skrift */
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: brown;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
 
 p {
   margin: 1rem;
@@ -292,6 +298,7 @@ body.menu-page .events-section {
     background-color: lightgray;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: ;
 }
 
 .calender th, .calender td {
@@ -302,9 +309,16 @@ body.menu-page .events-section {
 .calender th {
     background-color: brown;
     color: white;
+    width: 1fr;
 }
 
 /* events */
+
+.calender .event {
+    background-color: lightblue;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .event-list {
     margin-top: 2rem;
@@ -316,6 +330,7 @@ body.menu-page .events-section {
     border-radius: 8px;
     margin-bottom: 1rem;
     overflow: hidden;
+    box-shadow: ;
 }
 
 .event-date {
@@ -327,6 +342,42 @@ body.menu-page .events-section {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+}
+
+/* Hemsida 4 layout */
+
+body.order-page main {
+    display: grid
+    "header"
+    "products"
+    "form";
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+body.order-page .page-header {
+    grid-area: header;
+}
+
+body.order-page .form-section {
+    grid-area: products;
+}
+
+body.order-page .products-section {
+    grid-area: form;
+}
+
+.product-info {
+    padding: 0 1rem;
+}
+
+
+/* Kvantitet */
+.quantity-field {
+    width: auto;
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
 }
 
 @media (min-width: 500px) {
