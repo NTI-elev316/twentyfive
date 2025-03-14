@@ -11,18 +11,18 @@ body {
     background-color: white;
     min-height: 100vh;
     display: grid;
-    grid-template-areas: 
-     "header"
-     "main"
-     "footer";
-     grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -39,7 +39,7 @@ h1 {
 }
 
 p {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 a {
@@ -47,14 +47,14 @@ a {
     color: orange;
 }
 
-.rubrik-text{
+.rubrik-text {
     font-family: Times, serif;
     font-weight: bold;
 }
 
 
 section {
-    padding: 2rem  0;
+    padding: 2rem 0;
 }
 
 .second-background {
@@ -63,45 +63,45 @@ section {
 
 
 
-/* Header och Nav */ 
+/* Header och Nav */
 
 header {
-  grid-area: header;
-  background-color: brown;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+    grid-area: header;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
 
-header .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hamburger-button{
+.hamburger-button {
     cursor: pointer;
     background: none;
     border: none;
     color: white;
 }
 
-.hamburger-button i.material-icons{
+.hamburger-button i.material-icons {
     font-size: 2.5rem;
 }
 
-.overlay{
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     z-index: 1;
 }
 
-.overlay.active{
+.overlay.active {
     display: block;
 }
 
@@ -115,7 +115,7 @@ header .container{
     background-color: brown;
     z-index: 2;
     transition: right 0.3s;
-    box-shadow: -5px 0px 15px 8px rgba(0,0,0,0.5);
+    box-shadow: -5px 0px 15px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -137,13 +137,14 @@ header .container{
     margin-bottom: 0.5rem;
 }
 
-.main-nav a.active, .main-nav a:hover {
+.main-nav a.active,
+.main-nav a:hover {
     background-color: gray;
 }
 
 /* main */
 
-main{
+main {
     grid-area: main;
 }
 
@@ -162,10 +163,10 @@ footer {
 /* Hemsida 1 layout */
 body.home-page main {
     display: grid;
-    grid-template-areas: 
-    "banner"
-    "offers"
-    "hours";
+    grid-template-areas:
+        "banner"
+        "offers"
+        "hours";
     grid-template-columns: 1fr;
     gap: 2rem;
 }
@@ -223,7 +224,8 @@ body.home-page .hours-section {
     border-radius: 8px 8px 0 0;
 }
 
-.card h3, .card p {
+.card h3,
+.card p {
     padding: 0 1rem;
 }
 
@@ -239,21 +241,21 @@ body.home-page .hours-section {
 
 /* Öppetider */
 .hours {
-  background-color: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: ;
-  max-width: 400px;
-  margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: ;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /* Hemsida 2 layout */
 body.menu-page main {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "foods"
-    "drinks";
+    grid-template-areas:
+        "header"
+        "foods"
+        "drinks";
     grid-template-columns: 1fr;
     gap: 2rem;
 }
@@ -277,10 +279,10 @@ body.menu-page .page-header h1 {
 /* Hemsida 3 layout */
 body.calendar-page main {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "calendar"
-    "events";
+    grid-template-areas:
+        "header"
+        "calendar"
+        "events";
     grid-template-columns: 1fr;
     gap: 2rem;
 }
@@ -311,16 +313,16 @@ body.calendar-page .events-section {
 .calendar {
     width: 100%;
     table-layout: fixed;
-    border-collapse: separate;
     border-spacing: 0;
     background-color: lightgray;
     margin-bottom: 2rem;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.calendar th, .calendar td {
+.calendar th,
+.calendar td {
     border: 1px solid black;
     text-align: center;
     padding: 1rem;
@@ -349,7 +351,7 @@ body.calendar-page .events-section {
     border-radius: 8px;
     margin-bottom: 1rem;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .event-date {
@@ -374,10 +376,11 @@ body.calendar-page .events-section {
 /* Hemsida 4 layout */
 
 body.order-page main {
-    display: grid
-    "header"
-    "products"
-    "form";
+    display: grid;
+    grid-template-areas:
+        "header"
+        "products"
+        "form";
     grid-template-columns: 1fr;
     gap: 2rem;
 }
@@ -411,14 +414,52 @@ body.order-page .products-section {
 
 
     body {
-        grid-template-areas: 
-        "header"
-        "nav"
-        "main"
-        "footer";
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: auto auto 1fr auto;
     }
 
+    body.calendar-page main {
+        grid-template-areas:
+            "header header"
+            "calendar events";
+        grid-template-columns: 3fr 2fr;
+    }
 
+    .hamburger-button {
+        display: none;
+    }
 
+    .main-nav {
+        position: static;
+        grid-area: nav;
+        width: 100%;
+        height: auto;
+        background-color: brown;
+        box-shadow: none;
+    }
+
+    .main-nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    .rubrik-text {
+        font-weight: bold;
+        font-size: x-large;
+        margin-bottom: 1rem;
+    }
+
+    .removal {
+        display: none;
+    }
 
 }
