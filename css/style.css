@@ -461,7 +461,7 @@ textarea {
     text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
     h1 {
         font-size: 2.2rem;
