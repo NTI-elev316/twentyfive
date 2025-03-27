@@ -58,7 +58,7 @@ section {
 }
 
 .second-background {
-    background-color: #f1e8d9;
+    background-color: #FFF5E6;
 }
 
 
@@ -221,7 +221,7 @@ body.home-page .hours-section {
 }
 
 .card {
-    background-color: #f1e8d9;
+    background-color: #FFF5E6;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     border: 2px solid #6d4c41;
@@ -232,6 +232,7 @@ body.home-page .hours-section {
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid #6d4c41;
 }
 
 .card h3,
@@ -346,7 +347,7 @@ body.calendar-page .events-section {
 /* events */
 
 .calendar .event {
-    background-color: #f1e8d9;
+    background-color: #FFF5E6;
     font-weight: bold;
     cursor: pointer;
 }
@@ -449,7 +450,7 @@ textarea {
 }
 
 .product-info {
-    padding: 0 1rem;
+    padding: 0 rem;
 }
 
 
@@ -525,8 +526,8 @@ textarea {
         margin-bottom: 1rem;
     }
 
-    .removal {
-        display: none;
+    body.calendar-page .page-header .container {
+        margin: 1rem 0 0 4rem ;
     }
 
 }
