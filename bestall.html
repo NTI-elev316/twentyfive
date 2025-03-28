@@ -10,7 +10,7 @@
 </head>
 
 <body class="order-page">
-    
+
     <Header>
         <div class="container">
             <div class="rubrik-text">Fika & Co.</div>
@@ -19,10 +19,10 @@
             </button>
         </div>
     </Header>
-    
+
     <div class="overlay"></div>
-    
-    
+
+
     <nav class="main-nav">
         <ul>
             <li><a href="index.html">Hem</a></li>
@@ -31,16 +31,15 @@
             <li><a href="bestall.html" class="active">Beställ online</a></li>
         </ul>
     </nav>
-    
     <main>
-        
+
         <div class="page-header">
             <div class="container">
                 <h1>Beställ Online</h1>
                 <p>För avhämtning eller leverans inom Göteborg</p>
             </div>
         </div>
-        
+
         <section class="products-section">
             <div class="container">
                 <h2>Våra produkter som kan levereras</h2>
@@ -52,7 +51,7 @@
                             <p>Fransk croissant gjord av äkta smör</p>
                             <p class="price">25kr</p>
                         </div>
-                        <input type="number" class="quantity-field" placeholder="Antal">
+                        <input type="number" class="quantity-field" placeholder="Antal" min="0">
                     </div>
                     <div class="card">
                         <img src="img/Cupcakes.jpg" alt="Cupcakes">
@@ -61,7 +60,7 @@
                             <p>Handgjord med säsongens bär</p>
                             <p class="price">19kr</p>
                         </div>
-                        <input type="number" class="quantity-field" placeholder="Antal">
+                        <input type="number" class="quantity-field" placeholder="Antal" min="0">
                     </div>
                     <div class="card">
                         <img src="img/Donuts.jpg" alt="Donuts">
@@ -70,69 +69,70 @@
                             <p>Klassisk amerikansk donut med glasyr</p>
                             <p class="price">27kr</p>
                         </div>
-                        <input type="number" class="quantity-field" placeholder="Antal">
+                        <input type="number" class="quantity-field" placeholder="Antal" min="0">
                     </div>
                 </div>
-            </section>
-            
-            <section class="form-section">
-                <div class="container">
-                    <h2>Beställningsinformation</h2>
-                    <form class="order-form">
-                        <div class="form-group">
-                            <label for="name">Namn:</label>
-                            <input type="text" id="name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Telefon:</label>
-                            <input type="text" id="phone">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">E-post:</label>
-                            <input type="email" id="email">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="address">Adress:</label>
-                            <input type="text" id="address">
-                        </div>
-                        
-                        <button class="btn">Skicka beställning</button>
-                    </form>
                 </div>
-            </section>
-            
-            <section class="notes-section">
-                <div class="container">
-                    <h2>Bra att veta</h2>
-                    <ul>
-                        <li>Beställningar bör göras minst 2 timmar i förväg.</li>
-                        <li>Vid större beställningar (över 1000kr), beställ vänligen dagen innan.</li>
-                        <li>Leverans endast inom Göteborg.</li>
-                        <li>Leveransavgift är 50 kr samt 10% av beställningens pris.</li>
-                    </ul>
-                </div>
-            </section>
-            
-            
-        </main>
-        
-        
-        
-        
-        
-        
-        <footer>
+        </section>
+
+        <section class="form-section">
             <div class="container">
-                <p>Fika & Co. || Kungsgatan 123, 123 45 Göteborg</p>
-                <p>Telefon: 079-337-3506 || Email: info@fikaandco</p>
-                <p>&copy; 2025 Fika & Co. Alla rättigheter förbehållna.</p>
+                <h2>Beställningsinformation</h2>
+                <form class="order-form">
+                    <div class="form-group">
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Adress:</label>
+                        <input type="text" id="address" required>
+                    </div>
+
+                    <button class="btn">Skicka beställning</button>
+                </form>
             </div>
-        </footer>
-        
-        <script src="js/main.js"></script>
-    </body>
-    
-    </html>
+        </section>
+
+        <section class="notes-section">
+            <div class="container">
+                <h2>Bra att veta</h2>
+                <ul>
+                    <li>Beställningar bör göras minst 2 timmar i förväg.</li>
+                    <li>Vid större beställningar (över 1000kr), beställ vänligen dagen innan.</li>
+                    <li>Leverans endast inom Göteborg.</li>
+                    <li>Leveransavgift är 50 kr samt 10% av beställningens pris.</li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>Fika & Co. || Kungsgatan 123, 123 45 Göteborg</p>
+            <p>Telefon: 079-337-3506 || Email: info@fikaandco</p>
+            <p>&copy; 2025 Fika & Co. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
