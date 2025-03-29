@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Cabin:wght@400;600&display=swap" as="font" crossorigin>
+
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Cabin:wght@400;600&display=swap" rel="stylesheet">
   <title>Meny</title>
 </head>
 
@@ -13,7 +18,7 @@
 
   <Header>
     <div class="container">
-      <div class="rubrik-text">Fika & Co.</div>
+      <h1 class="rubrik-text">Fika & Co.</h1>
       <button class="hamburger-button">
         <i class="material-icons">menu</i>
       </button>
@@ -97,12 +102,12 @@
   <footer>
     <div class="container">
       <p>Fika & Co. || Kungsgatan 123, 123 45 Göteborg</p>
-      <p>Telefon: 079-337-3506 || Email: info@fikaandco</p>
+      <p>Telefon: 079-337-3506 || Email: info@fikaandco.se</p>
       <p>&copy; 2025 Fika & Co. Alla rättigheter förbehållna.</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>

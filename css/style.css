@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Cabin', sans-serif;
     line-height: 1.6;
+    font-size: 16px;
     color: black;
     background-color: #fcf9f2;
     min-height: 100vh;
@@ -34,24 +35,37 @@ h2,
 h3 {
     margin-bottom: 1rem;
     color: #6d4c41;
+    font-family: 'Almendra', serif;
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 a {
     text-decoration: none;
-    color: orange;
 }
 
 .rubrik-text {
-    font-family: Times, serif;
+    font-family: 'Almendra', serif;
     font-weight: bold;
+    color: white;
+    margin-top: 1rem;
 }
 
 
@@ -255,7 +269,7 @@ body.home-page .hours-section {
 
 .price {
     font-weight: bold;
-    color: brown;
+    color: #472E26;
     padding-bottom: 1rem;
 }
 
@@ -531,8 +545,6 @@ textarea {
     }
 
     .rubrik-text {
-        font-weight: bold;
-        font-size: x-large;
         margin-bottom: 1rem;
     }
 
